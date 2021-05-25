@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+background-color: #D3D3D3;
+height: 100%;   
+/*overflow: hidden;  /* makes the body non-scrollable (we will add scrolling to the sidebar and main content containers) */
+margin: 0px;  /* removes default style */
+
+box-sizing: border-box;
+}

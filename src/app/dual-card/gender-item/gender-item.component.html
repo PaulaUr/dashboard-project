@@ -1,0 +1,13 @@
+<div class="item-container" [ngStyle]="{display: dataItem.checked ? 'block' : 'none' }">
+      <img 
+      src="assets/images/{{dataItem.src}}" 
+      *ngIf="dataItem.src !== null && dataItem.src !== undefined"
+      class="icon">
+    <div class="item-body">
+        <span [ngStyle]="{'color': getColor(dataItem.gender)}" class="item-description">{{dataItem.gender}}</span>
+        <!-- <span [ngStyle]="{'color': data.gender === 'Women' ? '#BA55D3' : '#87CEFA'}" class="item-description">{{data.gender}}</span> -->
+        <p class="item-subtitle">{{ dataItem.description }}</p>
+      <span class="item-title">{{ dataItem.quantity }}</span>
+    </div>
+</div>
+

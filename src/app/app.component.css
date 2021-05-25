@@ -1,0 +1,20 @@
+.body-container{
+    padding-left: 0px;
+    height: 100%;   
+    /*overflow: hidden;  /* makes the body non-scrollable (we will add scrolling to the sidebar and main content containers) */
+    margin: 0px;  /* removes default style */
+    display: flex;  /* enables flex content for its children */
+    box-sizing: border-box;
+}
+.row {
+    height: 100%;  /* allows both columns to span the full height of the browser window */
+    flex-direction: column;
+}
+.title-body-container {
+    font-size:xx-large;
+    font-weight: bold;
+}
+.sub-title-body-container {
+    font-size:x-large;
+    font-weight:lighter;
+}

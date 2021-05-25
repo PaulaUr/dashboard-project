@@ -1,0 +1,22 @@
+.card-title {
+    padding: 8px;
+}
+.dual-card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    box-sizing: content-box;
+    /* border-style:dotted; */
+}
+.card-container {
+    /* max-width: 50%; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: white;
+}
+.card-item {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}

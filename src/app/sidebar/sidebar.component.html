@@ -1,0 +1,12 @@
+<div class="menu" [ngStyle]="{display: visibleSidebar ? 'flex' : 'none'}">
+  <div class="top-menu">
+    <span class="title-top-menu">Advanced filters</span>
+  </div>
+  <div class="main-menu">
+    <app-category
+    *ngFor="let data of categoriesList; let i = index"
+    [dataItem]="data"
+    [index]="i"
+    ></app-category>
+  </div>
+</div>

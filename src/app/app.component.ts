@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
+import { HeaderComponent } from './header/header.component';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'dashboard-project';
+  @ViewChild('header') header: HeaderComponent;
+  visible: boolean = false;
+
+
+  onCollapse(collapse: boolean) {
+    this.visible = collapse;
+  }
+
 }

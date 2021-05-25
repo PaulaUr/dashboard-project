@@ -1,0 +1,27 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex-shrink: 0;
+  border-right-style: outset;
+  border-right-width: 4px;
+  background-color: white;
+  /* padding: 0px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-style: dotted; */
+}
+
+.top-menu {
+  flex-shrink: 0;
+  margin-bottom: 15px;
+}
+.main-menu {
+  flex-grow: 1; /* ensures that the container will take up the full height of the parent container */
+  overflow-y: auto; /* adds scroll to this container */
+}
+.title-top-menu {
+font-size: larger;
+font-weight: bold;
+}
+

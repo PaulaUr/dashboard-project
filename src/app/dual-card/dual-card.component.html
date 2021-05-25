@@ -1,0 +1,18 @@
+<div class="dual-card">
+  <div class="card-container">
+    <h3 class="card-title" [ngStyle]="{display: showTitleGender ? 'block' : 'none'}">By gender</h3>
+    <div class="card-item">
+      <app-gender-item
+        *ngFor="let data of genderList; let i = index"
+        [dataItem]="data"
+        [index]="i"
+      ></app-gender-item>
+    </div>
+  </div>
+  <div class="card-container">
+    <h3 class="card-title" [ngStyle]="{display: showAge ? 'block' : 'none'}">Age</h3>
+    <div class="card-item" [ngStyle]="{display: showAge ? 'block' : 'none'}">
+      <app-age-item></app-age-item>
+    </div>
+    </div>
+</div>

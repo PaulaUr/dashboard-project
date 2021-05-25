@@ -1,0 +1,16 @@
+<div class="card">
+  <img 
+  src="assets/images/{{data.src}}" 
+  *ngIf="data.src !== null"
+  class="icon">
+  <div class="card-icon" *ngIf="data.icon !== null">
+    <i class="bi-{{ data.icon }} icon"></i>
+  </div>
+  <div class="card-body">
+    <span class="card-title">{{ data.quantity }}</span>
+    <p class="card-text">{{ data.description }}</p>
+  </div>
+</div>
+
+<!-- <i class="bi bi-person-bounding-box"></i>
+  <i class="bi bi-clock-history"></i> -->
